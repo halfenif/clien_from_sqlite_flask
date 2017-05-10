@@ -1,0 +1,16 @@
+This is Article List from Clien
+<hr>
+<ul>
+  <div><iframe name="iframe1" width="100%" scrolling=yes></iframe></div>
+  <div>
+  {% for item in articles %}
+    <li>
+      {{ item.pubdate }}
+      <a href="https://www.clien.net/service/board/park/{{ item.seq }}" target="iframe1">{{ item.title }}</a> ({{item.postuser}})
+    </li>
+  {% endfor %}
+</div>
+
+</ul>
+<hr>
+Good Day!

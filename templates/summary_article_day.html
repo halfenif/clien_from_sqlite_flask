@@ -1,0 +1,12 @@
+This is Day List from Clien Archive
+<hr>
+<ul>
+  {% for item in days %}
+    <li>
+      {{ item.day }} &nbsp
+      <a href="/article_list_day?day={{ item.day }}">{{ item.cnt }} </a>
+    </li>
+  {% endfor %}
+</ul>
+<hr>
+Good Day!
